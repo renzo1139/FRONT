@@ -10,6 +10,8 @@ function Registrarme() {
   const navigate = useNavigate();
 
   const handleRegister = () => {
+    console.log("Registrarme button clicked");
+    
     registerUser({
       name: userName,
       password,
