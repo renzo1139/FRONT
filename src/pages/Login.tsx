@@ -2,7 +2,7 @@ import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { loginService } from "../services/Login";
-import toast from "react-hot-toast";
+import toast from "react-hot-toast";  
 import { useNavigate } from "react-router-dom";
 import mapaInicio from "C:/Users/Admin/Documents/GitHub/FRONT/public/MAPA_INICIO.jpg";
 import whatsappImage from "C:/Users/Admin/Documents/GitHub/FRONT/public/WATSAPP.webp";
