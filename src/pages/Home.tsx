@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+// Home.tsx
+import React, { useEffect } from "react";
 import { IUser } from "../interfaces/User/User";
 import { useNavigate } from "react-router-dom";
 import MyMapComponent from "../components/Map";
 import DrawerCustomComponent from "../components/DrawerCustomComponent";
+import TopBarHome from "./TopBarHome"; // Importa el nuevo componente
 
 function Home() {
   const user = localStorage.getItem("user");
@@ -23,9 +25,10 @@ function Home() {
 
   return (
     <div>
+      {/* Usa el nuevo componente TopBarHome */}
+      <TopBarHome />
       <DrawerCustomComponent />
       <MyMapComponent />
-      
     </div>
   );
 }

@@ -1,10 +1,11 @@
+// Importa los módulos necesarios
+import React from "react";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import { Button, TextField } from "@mui/material";
 import { useState } from "react";
 import { loginService } from "../services/Login";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-import whatsappImage from "C:/Users/Admin/Documents/GitHub/FRONT/public/WATSAPP.webp";
 import TopBar from "./TopBar";
 
 // Reemplaza la ruta de la imagen con la nueva URL
@@ -36,7 +37,7 @@ function Login() {
     } else {
       toast.error("Completa los campos");
     }
-  };    
+  };
 
   const handleWhatsAppClick = () => {
     window.open("https://api.whatsapp.com/send/?phone=%2B51919717728&text&type=phone_number&app_absent=0", "_blank");
@@ -72,7 +73,7 @@ function Login() {
       {/* Botón de WhatsApp en la parte inferior derecha */}
       <section className="fixed bottom-0 right-0 p-4">
         <Button onClick={handleWhatsAppClick}>
-          <img src={whatsappImage} alt="WhatsApp" className="w-12 h-12" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/640px-WhatsApp.svg.png" alt="WhatsApp" className="w-12 h-12" />
         </Button>
       </section>
     </div>
@@ -80,5 +81,4 @@ function Login() {
 }
 
 export default Login;
-
 
