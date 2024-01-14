@@ -1,5 +1,5 @@
 // Home.tsx
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { IUser } from "../interfaces/User/User";
 import { useNavigate } from "react-router-dom";
 import MyMapComponent from "../components/Map";
